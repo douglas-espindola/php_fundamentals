@@ -16,11 +16,11 @@ $conta_3 = [
 ];
 
 $contasCorrentes = [
-  $conta_1,
-  $conta_2,
-  $conta_3
+  123456 => $conta_1,
+  789101 => $conta_2,
+  123456 => $conta_3
 ];
 
-foreach ($contasCorrentes as $conta) {
+foreach ($contasCorrentes as $cpf => $conta) {
   echo $conta['titular'] . PHP_EOL;
 }
