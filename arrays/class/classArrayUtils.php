@@ -6,6 +6,10 @@ class classArrayUtils
   {
     $retornar_posicao = array_search($elmento, $array);
 
-    unset($array[$retornar_posicao]);
+    if (is_int($retornar_posicao)) {
+      unset($array[$retornar_posicao]);
+    } else {
+      echo "Não foi encontrato arrays";
+    }
   }
 }
