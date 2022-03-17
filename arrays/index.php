@@ -1,9 +1,9 @@
 <?php
-// Classe
-require_once 'calculadora.php';
-require_once 'arrayUtils.php';
+// Class
+require_once './class/ClassCalcularMedia.php';
+require_once './class/classArrayUtils.php';
 
-// Programas
-require_once 'calcular_media.php';
-require_once 'menor_saldo.php';
-require_once 'remover_item_do_array.php';
+// Apps
+require_once './apps/calcula_media.php';
+require_once './apps/menor_saldo.php';
+require_once './apps/remover_item_do_array.php';
