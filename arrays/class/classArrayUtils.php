@@ -1,6 +1,6 @@
 <?php
 
-class arrayUtils
+class classArrayUtils
 {
   public static function remover($elmento, &$array)
   {

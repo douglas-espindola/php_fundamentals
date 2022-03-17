@@ -1,7 +1,7 @@
 <?php
 $notas = [9, 3, 10, 5, 10];
 
-$calculadora = new Calculadora();
+$calculadora = new ClassCalcularMedia();
 $media = $calculadora->calculaMedia($notas);
 
 if ($media > 0) {

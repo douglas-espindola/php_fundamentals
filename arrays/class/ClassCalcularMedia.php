@@ -1,6 +1,6 @@
 <?php
 
-class Calculadora
+class ClassCalcularMedia
 {
   public function calculaMedia($notas)
   {
