@@ -1,5 +1,7 @@
 <?php
 
+namespace Alura;
+
 class classArrayUtils
 {
   public static function remover($elmento, &$array)
