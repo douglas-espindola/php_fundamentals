@@ -14,7 +14,7 @@ $correntistas_e_compras = [
 echo "<pre>";
 var_dump($correntistas_e_compras);
 
-classArrayUtils::remover("Giovanni", $correntistas_e_compras);
+classArrayUtils::remover("12", $correntistas_e_compras);
 
 echo "<pre>";
 var_dump($correntistas_e_compras);
