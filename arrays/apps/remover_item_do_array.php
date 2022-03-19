@@ -10,7 +10,6 @@ $correntistas_e_compras = [
   "12"
 ];
 
-
 echo "<pre>";
 var_dump($correntistas_e_compras);
 
