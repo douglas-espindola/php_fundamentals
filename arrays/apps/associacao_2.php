@@ -20,8 +20,11 @@ $saldos = [
 
 $relacionados = array_combine($correntistas, $saldos);
 
-echo "<pre>";
-
-var_dump($relacionados);
-
-echo "</pre>";
+foreach ($relacionados as $chave => $relacionado) {
+  echo "<pre>";
+  if (array_key_exists($chave, $relacionados)) {
+    echo "O Saldo do(a) $chave é R$ $relacionado";
+  } else {
+    echo "Não encontrado";
+  }
+}

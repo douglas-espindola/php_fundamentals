@@ -1,8 +1,8 @@
 <?php
 
-namespace Alura;
+// namespace Alura;
 
-require 'autoload.php';
+// require 'autoload.php';
 
 // require_once './apps/calcula_media.php';
 // require_once './apps/menor_saldo.php';
