@@ -1,5 +1,7 @@
 <?php
 
+namespace Alura;
+
 $correntistas = [
   "Giovanni",
   "João",
@@ -27,4 +29,13 @@ foreach ($relacionados as $chave => $relacionado) {
   } else {
     echo "Não encontrado";
   }
+  echo "</pre>";
 }
+
+$maiores = classArrayUtils::correntistaMaiorValor(3000, $relacionados);
+
+echo "<pre>";
+
+var_dump($maiores);
+
+echo "</pre>";
