@@ -14,4 +14,17 @@ class classArrayUtils
       echo "Não foi encontrato arrays";
     }
   }
+
+  public static function correntistaMaiorValor($saldo, $correntistas)
+  {
+
+    $correntistaMaiorValor = [];
+
+    foreach ($correntistas as $chave => $valor) {
+      if ($saldo >= $valor) {
+        $correntistaMaiorValor[] = $chave;
+      }
+    }
+    return $correntistaMaiorValor;
+  }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Alura;
+
 $correntistas = [
   "Giovanni",
   "João",
@@ -20,8 +22,20 @@ $saldos = [
 
 $relacionados = array_combine($correntistas, $saldos);
 
+foreach ($relacionados as $chave => $relacionado) {
+  echo "<pre>";
+  if (array_key_exists($chave, $relacionados)) {
+    echo "O Saldo do(a) $chave é R$ $relacionado";
+  } else {
+    echo "Não encontrado";
+  }
+  echo "</pre>";
+}
+
+$maiores = classArrayUtils::correntistaMaiorValor(3000, $relacionados);
+
 echo "<pre>";
 
-var_dump($relacionados);
+var_dump($maiores);
 
 echo "</pre>";
